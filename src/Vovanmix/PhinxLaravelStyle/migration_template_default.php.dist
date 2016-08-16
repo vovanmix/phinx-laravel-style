@@ -1,0 +1,35 @@
+<?php
+
+use Vovanmix\PhinxLaravelStyle\AbstractMigration;
+use Vovanmix\PhinxLaravelStyle\Table;
+
+class $className extends AbstractMigration
+{
+
+	public function change()
+	{
+		/*
+		$this->create('table_name', function(Table $table) {
+			$table->increments('id');
+			$table->timestamps();
+		});
+		*/
+
+		/*
+		$this->update('table_name', function(Table $table) {
+
+		});
+		*/
+	}
+
+	/*
+	public function up() {
+
+    }
+
+    public function down() {
+
+    }
+    */
+
+}
