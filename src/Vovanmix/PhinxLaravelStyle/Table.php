@@ -580,7 +580,7 @@ class Table extends PhinxTable
         return $fk;
     }
 
-    public function addTimestamps()
+    public function addTimestamps($createdAtColumnName = 'created_at', $updatedAtColumnName = 'updated_at')
     {
 
     }
