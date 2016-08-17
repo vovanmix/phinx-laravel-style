@@ -3,6 +3,6 @@ Init after the first installation:
 cp ./vendor/vovanmix/phinx-laravel-style/src/phinx-settings.php ./phinx.php
 ```
 Generate migration:
-```php
+```shell
 php vendor/bin/phinx create --class=default MyNewMigration
 ```
