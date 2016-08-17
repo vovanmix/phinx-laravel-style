@@ -6,7 +6,7 @@ use Vovanmix\PhinxLaravelStyle\Table;
 /**
  * Class CreateUsersTable
  */
-class CreateUsersTable extends AbstractMigration
+class $className extends AbstractMigration
 {
 
     /**
