@@ -8,21 +8,17 @@ class $className extends AbstractMigration
 
 	public function change()
 	{
-		/*
+	
 		$this->create('table_name', function(Table $table) {
 			$table->increments('id');
 			$table->timestamps();
 		});
-		*/
 
-		/*
 		$this->update('table_name', function(Table $table) {
 
 		});
-		*/
 	}
 
-	/*
 	public function up() {
 
     }
@@ -30,6 +26,5 @@ class $className extends AbstractMigration
     public function down() {
 
     }
-    */
 
 }
