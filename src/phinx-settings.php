@@ -17,14 +17,14 @@ return array(
         "master" => array(
             "adapter" => env("DB_ADAPTER", "mysql"),
             "host" => env('DB_HOST'),
-            "name" => env('DB_DATABASE'),
-            "user" => env('DB_USERNAME'),
+            "name" => env('DB_NAME'),
+            "user" => env('DB_USER'),
             "pass" => env('DB_PASSWORD'),
             "port" => env('DB_PORT', 3306),
             "socket" => env('DB_SOCKET', null)
         )
     ),
     "aliases" => [
-        "default" => "\\lib\\Database\\MigrationCreator"
+        "default" => "\\Vovanmix\\PhinxLaravelStyle\\MigrationCreator"
     ]
 );
