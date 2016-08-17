@@ -3,27 +3,51 @@
 use Vovanmix\PhinxLaravelStyle\AbstractMigration;
 use Vovanmix\PhinxLaravelStyle\Table;
 
-class $className extends AbstractMigration
+/**
+ * Class CreateUsersTable
+ */
+class CreateUsersTable extends AbstractMigration
 {
 
-	public function change()
-	{
-	
-		$this->create('table_name', function(Table $table) {
-			$table->increments('id');
-			$table->timestamps();
-		});
+    /**
+     * Create
+     * 
+     * @return void
+     */
+    public function change()
+    {
 
-		$this->update('table_name', function(Table $table) {
+        $this->create(
+            'table_name', function (Table $table) {
+                $table->increments('id');
+                $table->timestamps();
+            }
+        );
 
-		});
-	}
+        $this->update(
+            'table_name', function (Table $table) {
 
-	public function up() {
+            }
+        );
+    }
+
+    /**
+     * Up
+     *
+     * @return void
+     */
+    public function up()
+    {
 
     }
 
-    public function down() {
+    /**
+     * Down
+     *
+     * @return void
+     */
+    public function down()
+    {
 
     }
 
