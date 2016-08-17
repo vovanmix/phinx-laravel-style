@@ -3,6 +3,8 @@
 namespace Vovanmix\PhinxLaravelStyle;
 
 use Phinx\Migration\CreationInterface;
+use Symfony\Component\Console\Input\InputInterface;
+use Symfony\Component\Console\Output\OutputInterface;
 
 class MigrationCreator implements CreationInterface
 {
@@ -52,5 +54,51 @@ class MigrationCreator implements CreationInterface
     public function postMigrationCreation($migrationFilename, $className, $baseClassName)
     {
         // TODO: Implement postMigrationCreation() method.
+    }
+
+    /**
+     * CreationInterface constructor.
+     *
+     * @param InputInterface|null $input
+     * @param OutputInterface|null $output
+     */
+    public function __construct(InputInterface $input = null, OutputInterface $output = null)
+    {
+    }
+
+    /**
+     * @param InputInterface $input
+     *
+     * @return CreationInterface
+     */
+    public function setInput(InputInterface $input)
+    {
+        // TODO: Implement setInput() method.
+    }
+
+    /**
+     * @param OutputInterface $output
+     *
+     * @return CreationInterface
+     */
+    public function setOutput(OutputInterface $output)
+    {
+        // TODO: Implement setOutput() method.
+    }
+
+    /**
+     * @return InputInterface
+     */
+    public function getInput()
+    {
+        // TODO: Implement getInput() method.
+    }
+
+    /**
+     * @return OutputInterface
+     */
+    public function getOutput()
+    {
+        // TODO: Implement getOutput() method.
     }
 }
