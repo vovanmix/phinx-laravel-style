@@ -6,3 +6,11 @@ Generate migration:
 ```shell
 php vendor/bin/phinx create --class=default MyNewMigration
 ```
+Migrate:
+```
+php vendor/bin/phinx migrate
+```
+Rollback:
+```
+php vendor/bin/phinx rollback
+```
