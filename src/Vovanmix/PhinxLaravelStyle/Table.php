@@ -283,39 +283,39 @@ class Table extends PhinxTable
      * Create a new float column on the table.
      *
      * @param  string $column
-     * @param  int $total
-     * @param  int $places
+     * @param  int $precision
+     * @param  int $scale
      * @return Column
      */
-    public function float($column, $total = 8, $places = 2)
+    public function float($column, $precision = 8, $scale = 2)
     {
-        return $this->addColumnNew('float', $column, compact('total', 'places'));
+        return $this->addColumnNew('float', $column, compact('precision', 'scale'));
     }
 
     /**
      * Create a new double column on the table.
      *
      * @param  string $column
-     * @param  int|null $total
-     * @param  int|null $places
+     * @param  int|null $precision
+     * @param  int|null $scale
      * @return Column
      */
-    public function double($column, $total = null, $places = null)
+    public function double($column, $precision = null, $scale = null)
     {
-        return $this->addColumnNew('double', $column, compact('total', 'places'));
+        return $this->addColumnNew('double', $column, compact('precision', 'scale'));
     }
 
     /**
      * Create a new decimal column on the table.
      *
      * @param  string $column
-     * @param  int $total
-     * @param  int $places
+     * @param  int $precision
+     * @param  int $scale
      * @return Column
      */
-    public function decimal($column, $total = 8, $places = 2)
+    public function decimal($column, $precision = 8, $scale = 2)
     {
-        return $this->addColumnNew('decimal', $column, compact('total', 'places'));
+        return $this->addColumnNew('decimal', $column, compact('precision', 'scale'));
     }
 
     /**
